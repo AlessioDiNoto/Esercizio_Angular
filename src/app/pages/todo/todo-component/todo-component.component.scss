@@ -1,0 +1,17 @@
+.add-todo {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+input {
+  flex: 1;
+  padding: 0.5rem;
+}
+
+button {
+  margin-left: 0.5rem;
+}
+.no-todos {
+  color: #666;
+  font-style: italic;
+}

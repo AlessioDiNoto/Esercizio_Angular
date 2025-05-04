@@ -1,0 +1,21 @@
+<div class="content">
+  <h2>Todo List</h2>
+  <div class="add-todo">
+    <input
+      type="text"
+      [(ngModel)]="newTodo"
+      (keyup.enter)="addTodo()"
+      placeholder="Aggiungi un nuovo todo"
+    />
+    <button (click)="addTodo()">Aggiungi</button>
+  </div>
+  <div *ngIf="todos.length === 0" class="no_todos">
+    Nessun ToDo presente, aggiungine uno!
+  </div>
+  <app-todo-item
+    *ngFor="let todo of todos; let i = index"
+    [todo]="todo"
+    (delete)="removeTodo(i)"
+    (toggle)="toggleTodo(i)"
+  ></app-todo-item>
+</div>

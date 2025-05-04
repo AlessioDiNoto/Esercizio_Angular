@@ -1,0 +1,43 @@
+<div class="content">
+  <h2>Meteo</h2>
+  <div class="search">
+    <input [(ngModel)]="city" placeholder="Inserisci nome città" />
+    <button (click)="getWeather()">Ottieni il meteo</button>
+  </div>
+
+  <div *ngIf="weather" class="weather-card">
+    <h3>{{ weather.city }}</h3>
+
+    <div class="weather-details">
+      <div
+        class="weather-icon"
+        [innerHTML]="getWeatherIcon(weather.condition)"
+      ></div>
+      <div>
+        <p>Temperatura: {{ weather.temperature }}°C</p>
+        <p>Condizione: {{ weather.condition }}</p>
+        <p>Umidità: {{ weather.humidity }}%</p>
+
+        <div [ngSwitch]="weather.condition" class="weather-message">
+          <p *ngSwitchCase="'soleggiato'" class="sunny">
+            Soleggiato! perfetto epr adnare fuori a fare una passeggiata
+          </p>
+          <p *ngSwitchCase="'nuvoloso'" class="cloudy">
+            Cielo nuvoloso oggi. Potrebbe piovere
+          </p>
+          <p *ngSwitchCase="'pioggia'" class="rainy">
+            Piove, rimani a casa a programmare!
+          </p>
+          <p *ngSwitchCase="'parzialmente nuvoloso'" class="partially-cloudy">
+            Piove, rimani a casa a programmare!
+          </p>
+          <p *ngSwitchDefault class="default">
+            Controlla i dati meteo per le previsioni di oggi!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="error" class="error">{{ error }}</div>
+    <div *ngIf="loading" class="loading">Loading...</div>
+  </div>
+</div>
