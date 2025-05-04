@@ -10,8 +10,8 @@ In questo esercizio è stata applicata la teoria spiegata durante la lezione:
 - **Protezione delle rotte**: Guards e `canActivate`
 - **Reactive Forms**: Uso di `FormGroup`, `FormControl`
 - **Validazioni sincrone**: `Validators.required`, `minLength`, `pattern`, ecc.
-- **Stato del form**: Controlli come `valid`, `invalid`, `touched`, `dirty`
-
+- **Stato del form**: Controlli come `valid`, `invalid`, `touched`
+  
 ## Struttura dell'applicazione
 
 L'applicazione è composta da diversi componenti, ognuno con funzionalità specifiche:
