@@ -97,10 +97,9 @@ L'applicazione è composta da diversi componenti, ognuno con funzionalità speci
    npm install
    ```
 2. Avviare il server di sviluppo:
-
-  ```bash
+   ```bash
    ng serve
-  ```
+   ```
 
 3. Aprire il browser e navigare a http://localhost:4200/.
 
