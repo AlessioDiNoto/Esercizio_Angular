@@ -98,9 +98,9 @@ L'applicazione è composta da diversi componenti, ognuno con funzionalità speci
    ```
 2. Avviare il server di sviluppo:
 
-```bash
- ng serve
-```
+  ```bash
+   ng serve
+  ```
 
 3. Aprire il browser e navigare a http://localhost:4200/.
 
