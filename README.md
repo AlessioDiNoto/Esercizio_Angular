@@ -8,7 +8,7 @@ In questo esercizio è stata applicata la teoria spiegata durante la lezione:
 - **Routing classico**: RouterModule, `router.navigate`, `routerLink`
 - **Invio di dati alle rotte**: Query params
 - **Protezione delle rotte**: Guards e `canActivate`
-- **Reactive Forms**: Uso di `FormGroup`, `FormControl`, `FormBuilder`
+- **Reactive Forms**: Uso di `FormGroup`, `FormControl`
 - **Validazioni sincrone**: `Validators.required`, `minLength`, `pattern`, ecc.
 - **Stato del form**: Controlli come `valid`, `invalid`, `touched`, `dirty`
 
