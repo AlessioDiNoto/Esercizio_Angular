@@ -1,4 +1,18 @@
 <header>
   <h1>Compito Angular</h1>
-  <button *ngIf="isLoggedIn" (click)="logout()">Logout</button>
+  <div>
+    <button *ngIf="isLoggedIn" (click)="logout()">Logout</button>
+    <span
+      [ngStyle]="{
+        'background-color': isLoggedIn ? 'green' : 'red',
+        'border-radius': '50%',
+        width: '20px',
+        height: '20px',
+        display: 'inline-block',
+        'vertical-align': 'middle',
+        'margin-left': '10px'
+      }"
+    >
+    </span>
+  </div>
 </header>

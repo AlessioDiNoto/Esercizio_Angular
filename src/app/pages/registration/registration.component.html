@@ -5,14 +5,14 @@
     >Nome:
     <input type="text" formControlName="nome" />
   </label>
-  <div *ngIf="nome.invalid && nome.touched" class="errore">
+  <div *ngIf="nome.invalid && nome.touched" class="error">
     Il nome è obbligatorio
   </div>
   <label
     >Email:
     <input type="email" formControlName="email" />
   </label>
-  <div *ngIf="email.invalid && email.touched" class="errore">
+  <div *ngIf="email.invalid && email.touched" class="error">
     <p *ngIf="email.errors?.['required']">L'email è obbligatoria</p>
     <p *ngIf="email.errors?.['email']">Formato email non valido</p>
     <p *ngIf="email.errors?.['gmail']">
@@ -27,7 +27,7 @@
     >Password:
     <input type="password" formControlName="password" />
   </label>
-  <div *ngIf="password.invalid && password.touched" class="errore">
+  <div *ngIf="password.invalid && password.touched" class="error">
     <ng-container *ngIf="password.errors?.['required']"
       >La password è obbligatoria</ng-container
     >
@@ -41,7 +41,7 @@
   </label>
   <div
     *ngIf="confirmPassword.invalid && registrationForm.errors?.['passwordsMismatch']"
-    class="errore"
+    class="error"
   >
     Le password non coincidono
   </div>
