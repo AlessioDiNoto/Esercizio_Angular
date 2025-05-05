@@ -60,7 +60,7 @@ L'applicazione è composta da diversi componenti, ognuno con funzionalità speci
 
 ### **WeatherComponent**
 
-- Consente di cercare il meteo di una città.
+- Consente di cercare il meteo di una città. Utilizzando un'Api fittizia creata nei services
 - Mostra dettagli come temperatura, condizione meteo e umidità.
 - Utilizza:
   - `*ngIf` per mostrare messaggi condizionali (es. "Città non trovata").
