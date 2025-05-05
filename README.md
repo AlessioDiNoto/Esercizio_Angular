@@ -8,10 +8,10 @@ In questo esercizio è stata applicata la teoria spiegata durante la lezione:
 - **Routing classico**: RouterModule, `router.navigate`, `routerLink`
 - **Invio di dati alle rotte**: Query params
 - **Protezione delle rotte**: Guards e `canActivate`
-- **Reactive Forms**: Uso di `FormGroup`, `FormControl`, `FormBuilder`
+- **Reactive Forms**: Uso di `FormGroup`, `FormControl`
 - **Validazioni sincrone**: `Validators.required`, `minLength`, `pattern`, ecc.
-- **Stato del form**: Controlli come `valid`, `invalid`, `touched`, `dirty`
-
+- **Stato del form**: Controlli come `valid`, `invalid`, `touched`
+  
 ## Struttura dell'applicazione
 
 L'applicazione è composta da diversi componenti, ognuno con funzionalità specifiche:
@@ -97,10 +97,9 @@ L'applicazione è composta da diversi componenti, ognuno con funzionalità speci
    npm install
    ```
 2. Avviare il server di sviluppo:
-
-```bash
- ng serve
-```
+   ```bash
+   ng serve
+   ```
 
 3. Aprire il browser e navigare a http://localhost:4200/.
 
